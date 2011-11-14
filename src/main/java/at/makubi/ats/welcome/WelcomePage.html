@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd" xml:lang="de" lang="de">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Welcome Page</title>
 </head>
 <body>
+<span wicket:id="feedback">feedbackmessages will be put here</span>
 	<span wicket:id="text"></span>
+	<form wicket:id="form">
+		<input type="text" wicket:id="gitUrl" />
+		<input wicket:id="submitButton" type="submit" value="submit" />
+	</form>
 </body>
 </html>
